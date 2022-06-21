@@ -4,3 +4,6 @@ gunicorn
 sklearn
 pandas
 -e .
+
+# for installing all internal libraries required
+#setup.py should be there to install -e . 

@@ -4,13 +4,12 @@ from typing import List
 #Declaring variables for setup functions
 PROJECT_NAME="housing-predictor"
 VERSION="0.0.3"
-AUTHOR="Avnish Yadav"
-DESRCIPTION="This is a first FSDS Nov batch Machine Learning Project"
+AUTHOR="Pallavi Kharbanda"
+DESRCIPTION="This is a first Machine Learning Project"
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
-
-def get_requirements_list()->List[str]:
+def get_requirements_list():# ->List[str]:
     """
    
     Description: This function is going to return list of requirement 
@@ -21,6 +20,9 @@ def get_requirements_list()->List[str]:
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         return requirement_file.readlines().remove("-e .")
+
+#Either run python setup.py install or pip install -r requirements.txt for egg-info
+
 
 
 setup(
