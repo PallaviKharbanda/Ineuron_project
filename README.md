@@ -1,4 +1,4 @@
-## Start Machine Learning project.
+### Start Machine Learning project.
 
 ### Software and account Requirement.
 
@@ -9,9 +9,9 @@
 5. [GIT Documentation](https://git-scm.com/docs/gittutorial)
 
 
-Creating conda environment
+Creating  and Activating conda environment
 ```
-conda create -p venv python==3.7 -y
+conda create -p venv python==3.7 -y # -p to create venv in project folder itself so that it can be deleted alongwith project
 ```
 ```
 conda activate venv/
@@ -62,9 +62,9 @@ git remote -v
 ```
 
 To setup CI/CD pipeline in heroku we need 3 information
-1. HEROKU_EMAIL = anishyadav7045075175@gmail.com
+1. HEROKU_EMAIL = pallavi.kharbanda01@gmail.com
 2. HEROKU_API_KEY = <>
-3. HEROKU_APP_NAME = ml-regression-app
+3. HEROKU_APP_NAME = mlproject-deloyment
 
 BUILD DOCKER IMAGE
 ```
@@ -80,7 +80,7 @@ docker images
 
 Run docker image
 ```
-docker run -p 5000:5000 -e PORT=5000 f8c749e73678
+docker run -p 5000:5000 -e PORT=5000 f8c749e73678(#Image_ID)
 ```
 
 To check running container in docker
@@ -97,4 +97,17 @@ docker stop <container_id>
 
 ```
 python setup.py install
+
+```
+
+Cloning Repository
+```
+Create a repository on github and clone it on local using:
+
+git clone https://PallaviKharbanda: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@github.com/PallaviKharbanda/ML_Project_VS.git
+
+(For a particular path location, first create a folder and then use cd that folder location and then use git clone command)
+
+use code . to open visual code from terminal(To enable this command, open VS app, type Command+shift+P and typr install shell command so that code . is successfully opened from command)
+
 ```
